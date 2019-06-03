@@ -1,0 +1,73 @@
+div.a {
+  text-align: center;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+h2 {
+  color: Red;
+  text-align: center;
+}
+h3 {
+  color: red;
+}
+
+h4 {
+  color: purple;
+}
+
+#link{
+  font-style:italic;
+  color: red;
+  text-align: center;
+}
+
+#fine{
+  font-style:italic;
+  color: purple;
+  font-weight:bold;
+  text-align: center;
+}
+
+p {
+  text-shadow: lightblue;
+}
+p1{
+  background-color: yellow;
+}
+
+p3 {
+    color: blue;
+}
+
+.buy {
+  font-weight: bold;
+  color: red;
+}
+
+.review {
+  background-color: grey;
+  border-style: solid;
+  height: 400;
+  width: 200;
+  font-size: 20px;
+  margin: 40px;
+  padding: 10px;
+}
+
+.top {
+  background-color: pink;
+  border-style: solid;
+  height: 400;
+  width: 200;
+  font-size: 30px;
+  margin: 50px;
+  padding: 20px; 
+}
+#d1link{
+  display:block;
+  text-align:center;
+}
+
