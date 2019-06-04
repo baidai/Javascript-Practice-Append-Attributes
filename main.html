@@ -5,9 +5,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 <body>
-	<div.a>
+	<div class="box">
 	  <h1>Cooking Oil Unlimited</h1>
-	</div.a>
+	</div>
 
 	<div class= "top">
 	  <p1> Freshly Recycled Cooking Oil</p1>
@@ -36,3 +36,41 @@
 
 	</div>
 </body>
+<script>
+	let getBody = document.body;
+
+	let newElement = document.createElement("h3");	
+
+	let date = new Date();
+	let currentHour = date.getHours();
+	
+
+	let createTxtMsg;
+
+	if (currentHour >= 3 && currentHour < 12) {
+		createTxtMsg = "Good Morning!";
+	}	else if (currentHour >= 12 && currentHour < 1){
+		createTxtMsg = "Good Afternoon!";
+	}   else if (currentHour>= 1 && currentHour < 18){
+		createTxtMsg = "Good Day!";
+	}   else if (currentHour >= 18 && currentHour < 21){
+		createTxtMsg = "Good Evening!";
+	}	else if (currentHour >= 21 && currentHour < 3){
+		createTxtMsg = "Wow, you are up late!";
+	}	else {
+		createTxtMsg = "Hello!";
+	}
+
+	let createEleTxt = document.createTextNode(createTxtMsg);
+
+	newElement.appendChild(createEleTxt);
+
+	getBody.appendChild(newElement);
+
+	newElement.setAttribute("class", "welcome");
+
+	newElement.style.cssText = "text-align: center; font-size: 60px; font-family: ariel"
+
+
+</script>
+</html>
