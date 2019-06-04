@@ -1,76 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Site</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Toggle Menu</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 <body>
-	<div class="box">
-	  <h1>Cooking Oil Unlimited</h1>
+    <title></title>
+    <a onclick="menuToggle()" =class="menu-btn" href='#'>Menu</a>
+	<div class="menu">
+	    <ul>
+	        <li><a href="#">Home</a></li>
+	        <li><a href="#">Current</a></li>
+	        <li><a href="#">News</a></li>
+	        <li><a href="#">Pipeline</a></li>
+	    </ul>       
 	</div>
-
-	<div class= "top">
-	  <p1> Freshly Recycled Cooking Oil</p1>
-
-	  <p>We have an <span style="color:red">AMAZING</span> deal for you.  If you are tired of spending tons of money on olive oil or Crisco cooking grease, we can save you <span class="buy"> Big Money</span> while accelerating your digestive system. <span class="buy">Low Low Prices!</span></>
-	</div>
-	   
-	<div>
-	  <h2> WARNING: Low Prices! Low Value!</h2>
-	</div>
-
-	<div class ="review">
-	  <p3>Customer Reviews:</p3>
-	  <ol>
-	    <li>Fred: What the @#!~% is this????</li>
-	<li>Linda: I was completly satisfied with the price, but spent hours on the toilet. </li> <img src = "https://upload.wikimedia.org/wikipedia/commons/e/ed/Dirty_pour-flush_toilet_%284360535972%29.jpg" alt="Image" height= "40" width="40"/> </li>
-	    <li>Rico: Now my fish tastes like chicken, and chicken smells like fish. </li>
-	  </ol>
-	</div>
-
-	<div>
-	  <h4 id ="fine"> You can send us your used cooking oil and get a 5% discount on your next purchase.  For more information.</h4>
-	  <h3 id ="link"> Get it While its Hot!</h3>
-	  
-	  <a href="https://topoilpurifier.en.alibaba.com/company_profile.html?spm=a2700.9099375.35.3.6c5b4a014CMwjU#top-nav-bar" id="d1link" > CLICK NOW </a>
-
-	</div>
+	<main>
+		<form class="test-form" action="script.php" method="post">
+			<input type="text" name="Sign Up" placeholder="First / Last Name">
+			<button type="submit" name="button">Click for Miss New Booty</button>
+		</form>
+		<a class="test-btn" href="#">Click to Order Now!</a>
+	</main>
 </body>
-<script>
-	let getBody = document.body;
-
-	let newElement = document.createElement("h3");	
-
-	let date = new Date();
-	let currentHour = date.getHours();
-	
-
-	let createTxtMsg;
-
-	if (currentHour >= 3 && currentHour < 12) {
-		createTxtMsg = "Good Morning!";
-	}	else if (currentHour >= 12 && currentHour < 1){
-		createTxtMsg = "Good Afternoon!";
-	}   else if (currentHour>= 1 && currentHour < 18){
-		createTxtMsg = "Good Day!";
-	}   else if (currentHour >= 18 && currentHour < 21){
-		createTxtMsg = "Good Evening!";
-	}	else if (currentHour >= 21 && currentHour < 3){
-		createTxtMsg = "Wow, you are up late!";
-	}	else {
-		createTxtMsg = "Hello!";
-	}
-
-	let createEleTxt = document.createTextNode(createTxtMsg);
-
-	newElement.appendChild(createEleTxt);
-
-	getBody.appendChild(newElement);
-
-	newElement.setAttribute("class", "welcome");
-
-	newElement.style.cssText = "text-align: center; font-size: 60px; font-family: ariel"
-
-
-</script>
+    <script src="script.js"></script>
 </html>
+
